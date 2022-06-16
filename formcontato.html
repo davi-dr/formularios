@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios01</title>
+
+    <style>
+        body {
+            background-image: linear-gradient(to top, #AA24DB,#7E1BF2,#401AE8 );
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Franklin Gothic Demi', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            /* margin-left: 100px; */
+            color: yellow;
+        }
+
+        .formlogin {
+                width: 650px;
+                margin: 50px auto ;    
+                font-family: arial, sans-serif;
+                
+
+        }
+
+        fieldset {
+            border: 1px solid white;
+            margin-bottom: 20px;
+            /* padding: 15px; */
+        }
+
+        label {
+            font-weight: bold;
+            text-align: justify;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+
+        legend {
+            font-weight: bold;
+            color: yellow;
+            margin-bottom: 10px;
+
+        }
+
+        .dados {
+            display: inline-block;
+            width: 100px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 15px;
+            text-align: justify;
+            
+        }
+
+        .nome {
+            width: 300px;
+            
+            
+        }
+
+        .email {
+            width: 300px;
+        }
+
+        div {
+            display: inline-block;
+            margin-left: 523px;   
+        }
+
+        .btn { 
+            border-radius: 1px ;
+            border: 1px solid;
+        }
+
+        
+    </style>
+
+    
+</head>
+<body>
+    <h1>Formulário De Contato</h1>
+    <hr>
+
+    <form action="#" method="post" class="formlogin">
+
+        <fieldset> <!-- é usado para agrupar elementos, dentro de um formulário web. -->
+            
+            <legend>Dados Pessoais</legend>
+
+            <label class="dados">Nome:</label>
+            <input class="nome" type="text">
+            <br>
+
+            <label class="dados">Sobrenome:</label>
+            <input type="text">
+            <br>
+
+            <label class="dados">Nascimento:</label>
+            <input type="date">
+            <br>
+            
+            <label for="Email" class="dados">Email:</label>
+            <input class="email" type="email" required>
+
+            <!-- required:indicar que a entrada do usuário é obrigatória -->
+            <br>
+
+            <label class="dados">Telefone:</label>
+            <input type="tel" >
+            <br>
+
+            
+            <label class="dados">Sexo:</label>
+            
+            <label>
+                <input type="radio" name="sexo" value="M">Masculino
+            </label>
+            
+            <!-- -name igual para selecionar apenas um dos seletores
+            -value: M/F p browser identificar o valor
+            -input+text dentro tag label para selecionar o todo o texto -->
+            
+            <label>
+                <input type="radio" name="sexo" value="F">Feminino
+            </label>
+            <br>
+            
+            <label class="dados">Estado:</label>
+            <select name="estado" id="">
+                <option value="0">Selecione</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+
+            </select>
+
+            <label >Cidade:</label>
+            <select name="estado" id="">
+                <option value="0">Selecione</option>
+                <option value="DF">Brasília</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+
+            </select>
+            <br>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Área de Interesse</legend>
+
+            <label>
+                <input type="checkbox" name="Web Designer" value="Web Designer">Web Designer
+            </label>
+
+            <label>
+                <input type="checkbox" name="Cientista de Dados" value="Cientista de Dados">Cientista de Dados
+            </label>
+
+            <label>
+                <input type="checkbox" name="Engenheiro da Computação" value="Engenheiro da Computação">Engenheiro da Computação
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+
+            <textarea cols="30" rows="10" style=" resize:none; width: 600px; height: 230px;" placeholder="Digite o texto aqui..."></textarea>
+            <br>
+
+            <textarea cols="30" rows="10" style=" resize:none; width: 600px; height: 230px;" readonly>Termos do Contrato:
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati architecto quasi recusandae sunt accusantium, cupiditate, saepe voluptate est vero repudiandae sequi nam tempore esse optio, minus veritatis hic tempora culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea quo provident repudiandae ad deserunt rem soluta illum. Vitae velit eaque porro doloremque laboriosam ratione, doloribus perspiciatis quisquam voluptas odit pariatur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ab rem nisi maxime, sed voluptatibus amet totam deserunt esse minus quis ducimus, fuga autem iusto quam quo saepe expedita illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi unde rerum quam! Quidem ratione laudantium dignissimos, nemo ad beatae magni obcaecati odit! Eveniet adipisci veniam optio quis, voluptatibus neque libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolore quos, debitis ipsam veniam distinctio quia earum? Enim, iure, repellendus, temporibus amet ullam animi aliquid eveniet praesentium illo perspiciatis optio?
+
+            
+            </textarea> <!-- readonly: deixa o texto somente para leitura -->
+            <br>
+
+            <label> <input type="checkbox" name="li">Li e Aceito</label>
+            
+        </fieldset>
+
+        <div>
+            <input type="reset" value="Limpar" class="btn">
+            <input type="submit" value="Concluir" class="btn">
+        </div>
+        
+
+    </form>
+    
+</body>
+</html>

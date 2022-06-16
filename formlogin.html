@@ -1,0 +1,96 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios01</title>
+
+        <style>
+            body {
+                background-color: yellow;
+                font-family: arial, sans-serif;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .formlogin legend {
+                display: inline-block;
+                text-align: center;
+                font-weight: bold;
+                
+
+            }
+            .formlogin {
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: arial, sans-serif;
+            }
+
+            .formlogin label {
+                margin-top: 15px;
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                
+            }
+
+            .formlogin fieldset {
+                background-color: blueviolet;
+                border-radius: 9px;
+                box-shadow: 5px 5px 5px rgb(78 76 66);
+            }
+
+            #user, #pass, .btn {
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+                padding: 10px;
+                font-size: 18px;
+                
+                
+            }
+
+            #user:focus, #pass:focus {
+                background-color: lightblue;
+            }
+
+            .btn {
+                margin-top: 15px;
+            }
+
+            #user {
+                margin-bottom: 15px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de formulário</h1>
+
+        <form action="#" method="post" class="formlogin">
+
+            <fieldset> <!-- é usado para agrupar elementos, dentro de um formulário web. -->
+                
+                <legend>Login</legend>
+
+                <label for="user">Digite seu usuário</label>
+                <input type="text" id="user" name="user" autofocus> <!-- autofocus: pronto para digitar -->
+                
+                <label for="pass">Digite sua senha</label>
+                <input type="password" id="pass" name="pass">
+
+                <input type="submit" value="Logar" class="btn">
+
+
+
+            </fieldset>
+
+        </form>
+        
+    </body>
+    </html>
